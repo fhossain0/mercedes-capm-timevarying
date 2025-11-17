@@ -1,0 +1,46 @@
+time-varying-beta-mbg/
+│
+├── data/
+│   ├── raw/
+│   │   ├── mbg_raw.csv
+│   │   ├── dax_raw.csv
+│   │
+│   ├── processed/
+│       ├── returns_mbg.csv
+│       ├── returns_dax.csv
+│       ├── merged_returns.csv
+│
+├── notebooks/
+│   ├── 01_download_data.ipynb
+│   ├── 02_clean_compute_returns.ipynb
+│   ├── 03_regression_time_windows.ipynb
+│   ├── 04_plot_time_varying_beta.ipynb
+│   └── 05_final_report_analysis.ipynb
+│
+├── src/
+│   ├── data_download.py
+│   ├── compute_returns.py
+│   ├── regression_capm.py
+│   ├── plot_beta.py
+│   └── utils.py
+│
+├── results/
+│   ├── plots/
+│   │   ├── beta_by_period.png
+│   │   ├── regression_scatter_period1.png
+│   │   ├── regression_scatter_period2.png
+│   │   ├── regression_scatter_period3.png
+│   │   ├── regression_scatter_period4.png
+│   ├── tables/
+│       ├── betas_summary.csv
+│       ├── alpha_r2_summary.csv
+│
+├── report/
+│   ├── capm_mercedes_report.pdf
+│   ├── capm_mercedes_report.tex (optional if LaTeX)
+│   ├── capm_mercedes_report.md
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── LICENSE (optional)
